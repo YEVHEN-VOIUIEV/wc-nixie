@@ -1,8 +1,12 @@
 {
   "name": "wc-nixie",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YEVHEN-VOIUIEV/wc-nixie.git"

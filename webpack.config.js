@@ -3,10 +3,13 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/wc-nixie.js'
+    'wc-nixie': './src/wc-nixie.js'
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    extensions: ['.js']
   }
 };

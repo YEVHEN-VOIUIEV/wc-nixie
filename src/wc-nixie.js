@@ -41,10 +41,10 @@ class WebComponentNixie extends HTMLElement {
       this.$nixie.innerHTML = `
         <div class="clock">
           ${[0, 1, 2, 3, 4, 5]
-            .map(i => {
-              const style = `background-image: url('./images/${timeString[i]}.jpg')`;
-              return `<div class="digit" style="${style}"></div>`;
-            })
+            .map(
+              i =>
+                `<div class="digit" style="background-image: url(${timeString[i]}.jpg)"></div>`
+            )
             .join('')}
         </div>
         `;
